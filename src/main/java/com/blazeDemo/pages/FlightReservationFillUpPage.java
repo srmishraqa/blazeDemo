@@ -78,7 +78,7 @@ public class FlightReservationFillUpPage extends TestBase {
         this.creditCardYear.sendKeys(Keys.chord(Keys.CONTROL, "a"));
         this.creditCardYear.sendKeys(creditCardYear);
         this.nameOnCard.sendKeys(nameOnTheCard);
-        if (Boolean.getBoolean(rememberMeFlag) == true) {
+        if (Boolean.parseBoolean(rememberMeFlag) == true) {
             rememberMeCheckBox.click();
         }
     }
